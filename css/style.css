@@ -32,6 +32,10 @@ header i {
     --bs-dark-rgb: 21, 38, 58;
 }
 
+.bg-badge {
+    background-color: rgb(46, 89, 184);
+}
+
 @media screen and (max-width: 991px) {
     .side-bar-md-xs {
         width: 80px;
