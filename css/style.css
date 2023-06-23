@@ -1,3 +1,16 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-primary {
+    display: flex;
+    flex-grow: 1;
+    overflow: auto;
+}
+
 header i {
     padding: 0.5rem;
 }
@@ -8,4 +21,21 @@ header i {
 
 .search-bar-start {
     border-radius: 0px 5px 5px 0px;
+}
+
+.side-bar-md-xs {
+    width: 150px;
+}
+
+.bg-img {
+    background-image: url(../img/sidebar-bg.png);
+    --bs-dark-rgb: 21, 38, 58;
+}
+
+@media screen and (max-width: 991px) {
+    .side-bar-md-xs {
+        width: 80px;
+        font-size: 25px;
+        align-items: center;
+    }
 }
