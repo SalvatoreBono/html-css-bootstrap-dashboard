@@ -11,6 +11,10 @@ body {
     overflow: auto;
 }
 
+.nav-link:hover {
+    background-color: rgb(130, 142, 153);
+}
+
 header i {
     padding: 0.5rem;
 }
@@ -41,5 +45,11 @@ header i {
         width: 80px;
         font-size: 25px;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 561px) {
+    .col-none {
+        display: none;
     }
 }
