@@ -184,11 +184,186 @@
                 </div>
                 <!-- !----RIGHT TOP CONTENT---- -->
                 <div class="col-12 col-md col-lg order-1">
-                  <div class="d-flex align-items-center">
-                    <div class="text-white pe-3">Nuovo Stutente</div>
-                    <button type="button" class="btn btn-outline-light">
+                  <div class="d-flex align-items-center text-white">
+                    <div class="pe-3">Nuovo Studente</div>
+                    <button
+                      type="button"
+                      class="btn btn-outline-light"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasRight"
+                      aria-controls="offcanvasRight"
+                    >
                       <i class="fa-solid fa-plus"></i>
                     </button>
+                    <!-- !----BONUS---- -->
+                    <div
+                      class="offcanvas offcanvas-end"
+                      tabindex="-1"
+                      id="offcanvasRight"
+                      aria-labelledby="offcanvasRightLabel"
+                    >
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                          Inserisci un nuovo studente
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="offcanvas"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <form class="row g-3">
+                          <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label"
+                              >Nome</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="inputEmail4"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label"
+                              >Cognome</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="inputPassword4"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <label
+                              class="visually-hidden"
+                              for="autoSizingInputGroup"
+                              >Username</label
+                            >
+                            <label for="inputPassword4" class="form-label"
+                              >Email</label
+                            >
+                            <div class="input-group">
+                              <div class="input-group-text">@</div>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="autoSizingInputGroup"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label"
+                              >Password</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="inputEmail4"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <label
+                              class="visually-hidden"
+                              for="autoSizingInputGroup"
+                              >Username</label
+                            >
+                            <label for="inputPassword4" class="form-label"
+                              >Email</label
+                            >
+                            <div class="input-group">
+                              <div class="input-group-text">@</div>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="autoSizingInputGroup"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label"
+                              >Password</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="inputEmail4"
+                            />
+                          </div>
+                          <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label"
+                              >Indirizzo</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="inputEmail4"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputCity" class="form-label"
+                              >Città</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="inputCity"
+                            />
+                          </div>
+                          <div class="col-md-4">
+                            <label for="inputState" class="form-label"
+                              >Stato</label
+                            >
+                            <select id="inputState" class="form-select">
+                              <option selected>Scegli...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="col-md-2">
+                            <label for="inputZip" class="form-label">CAP</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="inputZip"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="formFile" class="form-label"
+                              >Foto</label
+                            >
+                            <input
+                              class="form-control"
+                              type="file"
+                              id="formFile"
+                            />
+                          </div>
+
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="gridCheck"
+                              />
+                              <label class="form-check-label" for="gridCheck">
+                                Seleziona per proseguire
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-primary">
+                              Salva
+                            </button>
+                            <button type="submit" class="btn btn-warning">
+                              Svuota
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -199,6 +374,7 @@
         <section class="p-3">
           <div class="row">
             <div class="col-12">
+              <!-- !----TABLE---- -->
               <div class="row">
                 <div class="col-12 col-lg-8">
                   <div class="card">
@@ -568,6 +744,7 @@
                     </div>
                   </div>
                   <div class="row">
+                    <!-- !----F.A.Q.---- -->
                     <div class="col-12 gy-4">
                       <div class="card">
                         <h4 class="card-header">F.A.Q.</h4>
@@ -659,6 +836,7 @@
 
                 <div class="col-12 col-lg-4 gy-4 gy-lg-0">
                   <div class="row gy-4">
+                    <!-- !----TODO---- -->
                     <div class="col-12">
                       <div class="card">
                         <h4 class="card-header">Todo</h4>
@@ -709,6 +887,7 @@
                     </div>
                     <div>
                       <div class="col-12">
+                        <!-- !----STATS---- -->
                         <div class="card">
                           <div class="card-body">
                             <ul class="list-group">

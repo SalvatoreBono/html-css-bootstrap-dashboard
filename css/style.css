@@ -40,6 +40,10 @@ header i {
     background-color: rgb(46, 89, 184);
 }
 
+.offcanvas {
+    --bs-offcanvas-width: 800px
+}
+
 @media screen and (max-width: 991px) {
     .side-bar-md-xs {
         width: 80px;
